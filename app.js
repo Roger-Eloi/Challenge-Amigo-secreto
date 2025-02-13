@@ -15,7 +15,17 @@ function adicionarAmigo(){
 
 
 function sortearAmigo(){
+    if(amigos.length == 0){
+        return alert("Adicione um amigo para sortear.");
+    }
 
+    let gerarIndice = Math.random()*amigos.length;
+    let selecionarIndice = Math.floor(gerarIndice);
+
+    let amigoSorteado = document.getElementById("resultado");
+    amigoSorteado.innerHTML = amigos[selecionarIndice];
+    
+    //console.log(amigos[selecionarIndice]);
 }
 
 
@@ -25,12 +35,13 @@ function imprimirListaAmigos(){
     lista.innerHTML = "";
 
     for(i = 0; i<amigos.length; i++){
-        let novoItem = document.createElement("li"); 
-        novoItem.textContent = amigos[i];
+        let novoAmigo = document.createElement("li"); 
+        novoAmigo.textContent = amigos[i];
 
-        lista.appendChild(novoItem);
+        lista.appendChild(novoAmigo);
     }
 }
+
 function limparEntrada(){
     document.getElementById("amigo").value = "";
 }
