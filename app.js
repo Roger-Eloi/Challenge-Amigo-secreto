@@ -37,7 +37,7 @@ function imprimirListaAmigos(){
 
     for(i = 0; i<amigos.length; i++){
         let novoAmigo = document.createElement("li"); 
-        novoAmigo.textContent = amigos[i];
+        novoAmigo.textContent = "Amigo " + i + ": " + amigos[i];
 
         lista.appendChild(novoAmigo);
     }
