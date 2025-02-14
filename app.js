@@ -9,6 +9,8 @@ function adicionarAmigo(){
     amigos.push(entrada.value);
     
     limparEntrada(entrada);
+    
+    limparResultado(document.getElementById("resultado"));
 
     imprimirListaAmigos();
 }
@@ -42,7 +44,9 @@ function imprimirListaAmigos(){
         lista.appendChild(novoAmigo);
     }
 }
-
+function limparResultado(resultado){
+    resultado.innerHTML = "";
+}
 function limparListaAmigos(lista){
     lista.innerHTML = "";
 }
