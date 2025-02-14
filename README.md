@@ -7,11 +7,9 @@ O **Challenge de Amigo Secreto** é uma aplicação simples e eficiente para org
 Seja para festas de fim de ano, eventos entre amigos ou confraternizações de empresas. Este projeto facilita a distribuição dos participantes para quaisquer tipos de sorteio.
 
 ## Para Acessar o Projeto 
-<a href="https://roger-eloi.github.io/Challenge-Amigo-secreto/" target="_blank">
+<a href="https://roger-eloi.github.io/Challenge-Amigo-secreto/" target="_blank" rel="noopener noreferrer">
   <button>Clique aqui</button>
 </a>
-
-
 
 ## 🎯 Como Funciona?
 1. Adicione os Amigos do sorteio
