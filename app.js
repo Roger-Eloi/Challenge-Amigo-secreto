@@ -28,8 +28,8 @@ function sortearAmigo(){
 
     let amigoSorteado = document.getElementById("resultado");
     amigoSorteado.innerHTML = "Amigo Sorteado: " + amigos[selecionarIndice];
-    
-    //console.log(amigos[selecionarIndice]);
+
+    amigos = [];
 }
 
 
@@ -44,6 +44,7 @@ function imprimirListaAmigos(){
         lista.appendChild(novoAmigo);
     }
 }
+
 function limparResultado(resultado){
     resultado.innerHTML = "";
 }
